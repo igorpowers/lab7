@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/article.css/"> 
+        <link rel="icon" href="{{ STATIC_URL }}/static/img/dota.ico/">
+        <title>{{ post.title }}</title> 
+    </head>
+    <body class="article">
+        <div class="archive">
+            <div class="one-post">
+                <h2 class="post-title">{{ post.title }}</h2>
+                <div class="article-info">
+                    <div class="article-author">{{ post.author.username }} 
+                    </div>
+                    <div class="article-created-date">{{ post.created_date }}
+                    </div>
+                </div>
+                <p class="article-text">{{ post.text }}</p>
+            </div>               
+        </div>
+        <div class = "get-back">
+            <button class="exit"><a style="text-decoration: none" href="/">Все статьи</a></button> 
+        </div>       
+    </body>
+</html>
